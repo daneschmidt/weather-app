@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Fredoka One', cursive;
 }
 
 body {
@@ -120,7 +120,7 @@ body {
 }
 
 .pac-item-query {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-right: 14px;
 }
 

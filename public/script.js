@@ -28,6 +28,7 @@ const statusElement = document.querySelector('[data-status]')
 const windElement = document.querySelector('[data-wind]')
 const tempElement = document.querySelector('[data-temprature]')
 const precipElement = document.querySelector('[data-precipitation]')
+const uvIndex = document.querySelector('[data-uvIndex]')
 icon.set('icon', 'clear-day')
 icon.play()
 
@@ -37,6 +38,7 @@ function setWeatherData(data, place) {
     tempElement.textContent = data.temperature
     precipElement.textContent = `${data.precipProbability * 100}%`
     windElement.textContent = data.windSpeed
+    uvIndex.textContent = data.uvIndex
     icon.set('icon', data.icon)
     icon.play()
 }
