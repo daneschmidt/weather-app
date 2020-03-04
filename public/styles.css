@@ -97,7 +97,16 @@ body {
     margin-top: 20px;
 }
 
-.detail.bordered {
+.detail.bordered-left {
+    border-left: 2px solid #777;
+    
+}
+
+.detail.bordered-right {
+    border-right: 2px solid #777;
+}
+
+.detail.bordered-both {
     border-left: 2px solid #777;
     border-right: 2px solid #777;
 }
