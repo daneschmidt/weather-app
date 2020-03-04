@@ -67,6 +67,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .detail {
@@ -83,6 +86,7 @@ body {
     flex-grow: 1;
     font-weight: bold;
     color: #777;
+    align-content: center;
 }
 
 .detail .value {
@@ -102,7 +106,7 @@ body {
 
 .city-search {
     margin-top: 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     outline: none;
     border: 1px solid #777;
     border-radius: 5px;
@@ -111,7 +115,7 @@ body {
 }
 
 .pac-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px 10px;
 }
 

@@ -29,6 +29,11 @@ const windElement = document.querySelector('[data-wind]')
 const tempElement = document.querySelector('[data-temprature]')
 const precipElement = document.querySelector('[data-precipitation]')
 const uvIndex = document.querySelector('[data-uvIndex]')
+const windGustElement = document.querySelector('[data-wind-gust]')
+const windBearingElement = document.querySelector('[data-wind-bearing]')
+const visibilityElement = document.querySelector('[data-visibility]')
+const ozoneElement = document.querySelector('[data-ozone]')
+const cloudCoverElement = document.querySelector('[data-cloud-cover]')
 icon.set('icon', 'clear-day')
 icon.play()
 
@@ -39,6 +44,11 @@ function setWeatherData(data, place) {
     precipElement.textContent = `${data.precipProbability * 100}%`
     windElement.textContent = data.windSpeed
     uvIndex.textContent = data.uvIndex
+    windGustElement.textContent = data.windGust
+    windBearingElement.textContent = data.windBearing
+    visibilityElement.textContent = data.visibility
+    ozoneElement.textContent = data.ozone
+    cloudCoverElement.textContent = data.cloudCover
     icon.set('icon', data.icon)
     icon.play()
 }
