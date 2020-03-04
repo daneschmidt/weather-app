@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Impact', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
 
 }
 
@@ -44,4 +44,58 @@ body {
     width: 140px;
     height: 140px;
     border-radius: 50%;
+}
+
+.general-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.status {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.detail-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.detail .title {
+    font-size: 2rem;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #777;
+
+}
+
+.detail .value {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.detail.bordered {
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    
+
 }
