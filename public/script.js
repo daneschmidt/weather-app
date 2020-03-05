@@ -39,16 +39,16 @@ icon.play()
 
 function setWeatherData(data, place) {
     locationElement.textContent = place
-    statusElement.textContent = data.summary
-    tempElement.textContent = data.temperature
-    precipElement.textContent = `${data.precipProbability * 100}%`
-    windElement.textContent = data.windSpeed
-    uvIndex.textContent = data.uvIndex
-    windGustElement.textContent = data.windGust
-    windBearingElement.textContent = data.windBearing
-    visibilityElement.textContent = data.visibility
-    ozoneElement.textContent = data.ozone
-    cloudCoverElement.textContent = data.cloudCover
-    icon.set('icon', data.icon)
+    statusElement.textContent = data.currently.summary
+    tempElement.textContent = data.currently.temperature
+    precipElement.textContent = `${data.currently.precipProbability * 100}%`
+    windElement.textContent = data.currently.windSpeed
+    uvIndex.textContent = data.currently.uvIndex
+    windGustElement.textContent = data.currently.windGust
+    windBearingElement.textContent = data.currently.windBearing
+    visibilityElement.textContent = data.currently.visibility
+    ozoneElement.textContent = data.currently.ozone
+    cloudCoverElement.textContent = data.currently.cloudCover
+    icon.set('icon', data.currently.icon)
     icon.play()
 }
